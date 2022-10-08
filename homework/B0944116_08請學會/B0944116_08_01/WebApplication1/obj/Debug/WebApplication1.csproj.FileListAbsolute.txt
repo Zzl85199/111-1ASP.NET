@@ -1,0 +1,2 @@
+D:\ASP.NET\homework\B0944116_08\B0944116_08_01\WebApplication1\obj\Debug\WebApplication1.csproj.AssemblyReference.cache
+D:\ASP.NET\homework\B0944116_08\B0944116_08_01\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
