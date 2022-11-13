@@ -1,0 +1,129 @@
+﻿<%@ Master Language="C#" %>
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta charset="utf-8" />    
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server" />
+    <style type="text/css">
+        .auto-style1 {
+            height: 20px;
+        }
+    </style>
+    <link href="hw4_2.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+            <table class="ContentStyle">
+               <tr>
+                    <td colspan="5" class="TableHeaderLabelStyle">
+                        <asp:Label ID="Label1" runat="server" Text="課程介紹" CssClass="TableHeaderLabelStyle"></asp:Label>
+                    </td>
+               </tr>
+               <tr>
+                    <td class="ColumnHeaderLabelStyle">
+                        <asp:Label ID="Label2" runat="server" Text="課程編號" CssClass="ColumnHeaderLabelStyle"></asp:Label>
+                    </td>
+                    <td class="ColumnHeaderLabelStyle">
+                        <asp:Label ID="Label3" runat="server" Text="課程名稱" CssClass="ColumnHeaderLabelStyle"></asp:Label>
+                    </td>
+                    <td class="ColumnHeaderLabelStyle">
+                        <asp:Label ID="Label4" runat="server" Text="學分數" CssClass="ColumnHeaderLabelStyle"></asp:Label>
+                    </td>
+                    <td class="ColumnHeaderLabelStyle">
+                        <asp:Label ID="Label5" runat="server" Text="教科書封面" CssClass="ColumnHeaderLabelStyle"></asp:Label>
+                    </td>
+                    <td class="ColumnHeaderLabelStyle">
+                        <asp:Label ID="Label6" runat="server" Text="功能" CssClass="ColumnHeaderLabelStyle"></asp:Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                            <asp:HyperLink ID="HyperLink1" runat="server">CS101</asp:HyperLink>
+                        </asp:ContentPlaceHolder>
+                    </td>
+                    <td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat="server">
+                            <asp:Label ID="Label7" runat="server" Text="計算機概論"></asp:Label>
+                        </asp:ContentPlaceHolder>
+                    </td>
+                    <td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder5" runat="server">
+                            <asp:Label ID="Label10" runat="server" Text="4"></asp:Label>
+                        </asp:ContentPlaceHolder>
+                    </td>
+                    <td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder6" runat="server">
+                            <asp:Image ID="Image1" runat="server" ImageUrl="~/CS101.gif" />
+                        </asp:ContentPlaceHolder>
+                    </td>
+                    <td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder7" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder8" runat="server">
+                            <asp:HyperLink ID="HyperLink2" runat="server">CS121</asp:HyperLink>
+                        </asp:ContentPlaceHolder>
+                    </td>
+                    <td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder9" runat="server">
+                            <asp:Label ID="Label8" runat="server" Text="離散數學"></asp:Label>
+                        </asp:ContentPlaceHolder>
+                    </td>
+                    <td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder10" runat="server">
+                            <asp:Label ID="Label11" runat="server" Text="4"></asp:Label>
+                        </asp:ContentPlaceHolder>
+                    </td>
+                    <td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder11" runat="server">
+                            <asp:Image ID="Image2" runat="server" ImageUrl="~/CS121.gif" />
+                        </asp:ContentPlaceHolder>
+                    </td>
+                    <td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder12" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder13" runat="server">
+                            <asp:HyperLink ID="HyperLink3" runat="server">CS203</asp:HyperLink>
+                        </asp:ContentPlaceHolder>
+                    </td>
+                    <td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder14" runat="server">
+                            <asp:Label ID="Label9" runat="server" Text="程式語言"></asp:Label>
+                        </asp:ContentPlaceHolder>
+                    </td>
+                    <td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder15" runat="server">
+                            <asp:Label ID="Label12" runat="server" Text="3"></asp:Label>
+                        </asp:ContentPlaceHolder>
+                    </td>
+                    <td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder16" runat="server">
+                            <asp:Image ID="Image3" runat="server" ImageUrl="~/CS203.gif" />
+                        </asp:ContentPlaceHolder>
+                    </td>
+                    <td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder17" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                   <td colspan="5">
+                       <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+                   </td>
+                </tr>
+            </table>
+    </div>
+    </form>
+</body>
+</html>

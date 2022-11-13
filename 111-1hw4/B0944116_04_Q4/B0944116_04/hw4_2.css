@@ -1,0 +1,38 @@
+﻿.TableHeaderLabelStyle {
+    font-family: 標楷體;
+    font-size: x-large;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    background-color: #990000;
+}
+
+.ColumnHeaderLabelStyle {
+    font-family: 標楷體;
+    font-size: large;
+    font-weight: bold;
+    color: #0000FF;
+    text-align: center;
+    background-color: #FF6600;
+}
+
+.ContentStyle {
+    text-align: center;
+    background-color: #CCFFCC;
+}
+
+.HyperLinkStyle {
+    font-weight: bold;
+    color: #0000FF;
+}
+
+.LabelStyle {
+    font-weight: bold;
+    color: #FF0000;
+}
+
+.ButtonStyle {
+    font-weight: bold;
+    color: #FF0000;
+    background-color: #99CCFF;
+}

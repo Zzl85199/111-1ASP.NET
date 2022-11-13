@@ -1,0 +1,14 @@
+﻿.englishstyle {
+    font-family: "Times New Roman";
+    color: #0000FF;
+    font-size: xx-large;
+    font-weight: bold;
+    background-color: #FFFF00;
+}
+
+.chinesestyle {
+    font-family: 標楷體;
+    color: #000000;
+    font-size: xx-large;
+    background-color: #EF66CC
+}
