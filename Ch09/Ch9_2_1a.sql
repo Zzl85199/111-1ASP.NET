@@ -1,0 +1,1 @@
+SELECT sid, name, tel FROM Students

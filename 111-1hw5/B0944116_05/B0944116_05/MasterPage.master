@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <style type="text/css">
+        .auto-style1 {
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table style="background-color:palegreen">
+            <tr>
+                <td colspan="2" class="auto-style1">
+                    <asp:Label ID="Label1" runat="server" BackColor="Maroon" BorderColor="Maroon" 
+                        BorderStyle="None" Font-Names="微軟正黑體" Font-Size="X-Large" ForeColor="White" 
+                        Height="34px" Width="387px" Text="大帥哥的3C網站" EnableTheming="false"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+                        <CurrentNodeTemplate>
+                            <asp:Label ID="Label2" runat="server" Text='<%# Eval("title") %>' ></asp:Label>
+                        </CurrentNodeTemplate>
+                        <NodeTemplate>
+                            <asp:Button ID="Button1" runat="server" Text='<%# Eval("title")%>' OnCommand="Button_Command" CommandArgument='<%# Eval("url") %>' SkinID="BlueButton"/>
+                        </NodeTemplate>
+                        <PathSeparatorTemplate>
+                            \
+                        </PathSeparatorTemplate>
+                        <RootNodeTemplate>
+                            <asp:Button ID="Button2" runat="server" Text='<%# Eval("title")%>' OnCommand="Button_Command" CommandArgument='<%# Eval("url") %>' SkinID="YellowButton" />
+                        </RootNodeTemplate>
+                    </asp:SiteMapPath>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1" ImageSet="XPFileExplorer" NodeIndent="15">
+                        <HoverNodeStyle Font-Underline="True" ForeColor="#6666AA" />
+                        <NodeStyle Font-Names="Tahoma" Font-Size="8pt" ForeColor="Black" HorizontalPadding="2px" NodeSpacing="0px" VerticalPadding="2px" />
+                        <ParentNodeStyle Font-Bold="False" />
+                        <SelectedNodeStyle BackColor="#B5B5B5" Font-Underline="False" HorizontalPadding="0px" VerticalPadding="0px" />
+                    </asp:TreeView>
+                    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                </td>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

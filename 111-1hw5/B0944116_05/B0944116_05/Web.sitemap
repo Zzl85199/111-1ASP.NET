@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="Default.aspx" title="首頁"  description="首頁">
+    <siteMapNode url="2-1.aspx" title="智慧型手機"  description="智慧型手機" >
+	  <siteMapNode url="3-1.aspx" title="Samsung"  description="Samsung" />
+	  <siteMapNode url="3-2.aspx" title="Apple"  description="Apple" />
+	</siteMapNode>
+    <siteMapNode url="2-2.aspx" title="電腦"  description="電腦" >
+	  <siteMapNode url="3-3.aspx" title="桌上型電腦"  description="桌上型電腦" />
+	  <siteMapNode url="3-4.aspx" title="筆記型電腦"  description="筆記型電腦" />
+	  <siteMapNode url="3-5.aspx" title="平板電腦"  description="平板電腦" />
+	</siteMapNode>
+	<siteMapNode url="2-3.aspx" title="圖書"  description="圖書" >
+	  <siteMapNode url="3-6.aspx" title="PCDIY!"  description="PCDIY!" />
+	  <siteMapNode url="3-7.aspx" title="電腦王"  description="電腦王" />
+	</siteMapNode>
+  </siteMapNode>
+</siteMap>
